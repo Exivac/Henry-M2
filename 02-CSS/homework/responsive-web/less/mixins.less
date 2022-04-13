@@ -1,1 +1,17 @@
 // Mixins acá
+
+.flex(@dir, @justify, @align){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.img-rad(@ammount){
+    border-radius: @ammount;
+}
+
+.button (@bg-col, @col){
+    background-color: @bg-col;
+    color:@col;
+}
