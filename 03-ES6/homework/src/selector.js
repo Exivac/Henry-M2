@@ -11,7 +11,13 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
   // usa matchFunc para identificar elementos que matchien
 
   // TU CÓDIGO AQUÍ
-  
+  if(matchFunc(startEl)) resultSet.push(startEl)
+
+  for (let element of startEl.children){
+    resultSet = [...resultSet, ...traverseDomAndCollectElements(matchFunc, element)]
+  }
+
+  return resultSet
 };
 
 // Detecta y devuelve el tipo de selector
