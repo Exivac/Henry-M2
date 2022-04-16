@@ -1,28 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
   <title>HomeWork Ajax</title>
 </head>
+
 <body>
   <button id='boton'>Ver Amigos</button>
+  
+  <h2>Ver Amigos</h2>
+  <!-- <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif'/> -->
+  
   <ul id='lista'>
   </ul>
-
-  <h2>Ver Amigos</h2>
-  <img src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif' />
+  
+  
   <hr>
-  <input id='input'></input>
-  <button id='search'>Buscar</button>
+  <h2>Buscar Amigo</h2>
+  <input id='input'></input><br>
+  <button id='search'> > Buscar </button><br>
   <span id='amigo'></span>
-
+  
   <hr>
-  <input id='inputDelete'></input>
-  <button id='delete'>Delete</button>
+  
+  <h2>Borrar Amigo</h2>
+  <input id='inputDelete'></input><br>
+  <button id='delete'> > Delete </button>
   <span id='sucess'></span>
-  <script src="index.js"></script>
+  
+  <hr>
+<style>
+  #boton{
+  background-color: black;
+  color: white;
+  border-block: unset;
+  border: 2px solid black;
+  padding: 4px 10px;
+  border-radius: 0px 0px 10px 0px;
+  margin:0px;
+  }
+  #boton:hover{
+    background-color: white;
+    color: black;
+  }
+
+  #delete {
+  background-color: black;
+  color: white;
+  border-block: unset;
+  border: 2px solid black;
+  padding: 4px 10px;
+  border-radius: 0px 10px 10px 0px;
+  margin: 5px 3px;
+}
+#delete:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+#search {
+  background-color: black;
+    color: white;
+    border-block: unset;
+    border: 2px solid black;
+    padding: 4px 10px;
+    border-radius: 0px 10px 10px 0px;
+    margin: 5px 3px;
+}
+#search:hover{
+  background-color: white;
+    color: black;
+}
+
+</style>
 </body>
+
+<script src="./index.js"></script>
 </html>
