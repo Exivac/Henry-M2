@@ -1,3 +1,29 @@
 #logoHenry {
-  margin-right: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: aliceblue;
+}
+
+#About{
+  border: 0;
+  border-radius: 5px;
+
+  color: white;
+
+  background-color: gray;
+}
+
+#navBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5vw;
+
+  background-color: rgb(58, 58, 58);
 }
